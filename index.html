@@ -27,10 +27,65 @@ a:active {
 }
 </style>
 
+
   <b style="color:white;font-size: 30px;">nocrossing4</b>
-  <a href="https://nocrossing4.bandcamp.com" style="background-color:light-green;font-size: 24px;">bandcamp</a>
-  <a href="https://www.youtube.com/@nocrossing4" style="background-color:light-green;font-size: 24px;">youtube 	</a>
-  <a href="https://soundcloud.com/nocrossing4" style="background-color:light-green;font-size: 24px;">soundcloud</a>
+  <a href="https://nocrossing4.bandcamp.com" target="_blank" style="background-color:light-green;font-size: 24px;">bandcamp</a>
+  <a href="https://www.youtube.com/@nocrossing4" target="_blank" style="background-color:light-green;font-size: 24px;">youtube 	</a>
+  <a href="https://soundcloud.com/nocrossing4" target="_blank" style="background-color:light-green;font-size: 24px;">soundcloud</a>
+
+<style>
+ 
+  .frame {
+    position: fixed;
+    /* This is the anchor point — adjust as needed */
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    pointer-events: none;
+  }
+</style>
+</head>
+
+<body>
+
+  <img src="asciii1.png" class="frame">
+  <img src="asciii2.png" class="frame">
+  <img src="asciii3.png" class="frame">
+  <img src="asciii4.png" class="frame">
+  <img src="asciii5.png" class="frame">
+  <img src="asciii6.png" class="frame">
+  <img src="asciii7.png" class="frame">
+  <img src="asciii8.png" class="frame">
+
+<script>
+  const frames = document.querySelectorAll('.frame');
+  const totalFrames = frames.length;
+  const frameDuration = 150; // milliseconds per frame
+  const pauseDuration = 800; // pause at end before restarting
+
+  let currentFrame = 0;
+
+  function playAnimation() {
+    frames.forEach((frame, index) => {
+      frame.style.display = (index === currentFrame) ? 'block' : 'none';
+    });
+
+    currentFrame++;
+
+    if (currentFrame < totalFrames) {
+      setTimeout(playAnimation, frameDuration);
+    } else {
+      currentFrame = 0;
+      setTimeout(playAnimation, pauseDuration);
+    }
+  }
+
+  playAnimation();
+</script>
+
+</body>
+
 </body>
 </html]>
 
