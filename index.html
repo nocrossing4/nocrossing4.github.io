@@ -1,197 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>nocrossing4</title>
-  <style>
-    body {
-      background-color: black;
-    }
+<meta charset="UTF-8" />
+<title>nocrossing4</title>
+<style>
+  body {
+    background-color: black;
+  }
 
-    /* Link Styling */
-    a:link {
-      color: #e78dc4;
-      text-decoration: none;
-    }
-    a:visited {
-      color: #67c7ff;
-      text-decoration: none;
-    }
-    a:hover {
-      color: red;
-      text-decoration: underline;
-    }
-    a:active {
-      color: #ffb300;
-      text-decoration: underline;
-    }
+  /* Link Styling */
+  a:link {
+    color: #e78dc4;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #67c7ff;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+  a:active {
+    color: #ffb300;
+    text-decoration: underline;
+  }
 
-    /* Header Styling */
-    .title {
-      color: white;
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-    .link {
-      font-size: 24px;
-      margin-right: 20px;
-    }
+  /* Header Styling */
+  .title {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .link {
+    font-size: 24px;
+    margin-right: 20px;
+  }
 
-    /* Animation Frame Positions */
-  .frame { /* Animation 1: right side */
-  position: fixed;
-  left: 65%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  pointer-events: none;
-  filter: sepia(0.8) saturate(5) hue-rotate(180deg) brightness(1); /* Blue tint */
-}
+  /* Animation Frame Positions */
+  .frame { 
+    position: fixed;
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    pointer-events: none;
+    filter: sepia(0.8) saturate(5) hue-rotate(180deg) brightness(1);
+  }
 
-.frame2 { /* Animation 2: left side */
-  position: fixed;
-  left: 35%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  pointer-events: none;
-  filter: sepia(0.4) saturate(4) hue-rotate(270deg) brightness(1); /* Purple tint */
-}
+  .frame2 {
+    position: fixed;
+    left: 35%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    pointer-events: none;
+    filter: sepia(0.4) saturate(4) hue-rotate(270deg) brightness(1);
+  }
 
-.frame3 { /* Animation 3: top center */
-  position: fixed;
-  left: 80%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  display: none;
-  pointer-events: none;
-  filter: sepia(1) saturate(6) hue-rotate(10deg) brightness(1); /* Orange tint */
-}
-
-  </style>
+  .frame3 {
+    position: fixed;
+    left: 80%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    display: none;
+    pointer-events: none;
+    filter: sepia(1) saturate(6) hue-rotate(10deg) brightness(1);
+  }
+</style>
 </head>
 <body>
 
-  <!-- Title and Links -->
-  <b class="title">nocrossing4</b><br />
-  <a href="https://nocrossing4.bandcamp.com" target="_blank" class="link">bandcamp</a>
-  <a href="https://www.youtube.com/@nocrossing4" target="_blank" class="link">youtube</a>
-  <a href="https://soundcloud.com/nocrossing4" target="_blank" class="link">soundcloud</a>
+<!-- Title and Links -->
+<b class="title">nocrossing4</b><br />
+<a href="https://nocrossing4.bandcamp.com" target="_blank" class="link">bandcamp</a>
+<a href="https://www.youtube.com/@nocrossing4" target="_blank" class="link">youtube</a>
+<a href="https://soundcloud.com/nocrossing4" target="_blank" class="link">soundcloud</a>
 
-  <!-- Animation 1 Images (3.1.png to 3.12.png) -->
-  <img src="3.1.png" class="frame" />
-  <img src="3.2.png" class="frame" />
-  <img src="3.3.png" class="frame" />
-  <img src="3.4.png" class="frame" />
-  <img src="3.5.png" class="frame" />
-  <img src="3.6.png" class="frame" />
-  <img src="3.7.png" class="frame" />
-  <img src="3.8.png" class="frame" />
-  <img src="3.9.png" class="frame" />
-  <img src="3.10.png" class="frame" />
-  <img src="3.11.png" class="frame" />
-  <img src="3.12.png" class="frame" />
+<!-- Animation 1 Images -->
+<img src="3.1.png" class="frame" />
+<img src="3.2.png" class="frame" />
+<img src="3.3.png" class="frame" />
+<img src="3.4.png" class="frame" />
+<img src="3.5.png" class="frame" />
+<img src="3.6.png" class="frame" />
+<img src="3.7.png" class="frame" />
+<img src="3.8.png" class="frame" />
+<img src="3.9.png" class="frame" />
+<img src="3.10.png" class="frame" />
+<img src="3.11.png" class="frame" />
+<img src="3.12.png" class="frame" />
 
-  <!-- Animation 2 Images (2.1.png to 2.9.png) -->
-  <img src="2.1.png" class="frame2" />
-  <img src="2.2.png" class="frame2" />
-  <img src="2.3.png" class="frame2" />
-  <img src="2.4.png" class="frame2" />
-  <img src="2.5.png" class="frame2" />
-  <img src="2.6.png" class="frame2" />
-  <img src="2.7.png" class="frame2" />
-  <img src="2.8.png" class="frame2" />
-  <img src="2.9.png" class="frame2" />
+<!-- Animation 2 Images -->
+<img src="2.1.png" class="frame2" />
+<img src="2.2.png" class="frame2" />
+<img src="2.3.png" class="frame2" />
+<img src="2.4.png" class="frame2" />
+<img src="2.5.png" class="frame2" />
+<img src="2.6.png" class="frame2" />
+<img src="2.7.png" class="frame2" />
+<img src="2.8.png" class="frame2" />
+<img src="2.9.png" class="frame2" />
 
-  <!-- Animation 3 Images (1.1.png to 1.10.png) -->
-  <img src="1.1.png" class="frame3" />
-  <img src="1.2.png" class="frame3" />
-  <img src="1.3.png" class="frame3" />
-  <img src="1.4.png" class="frame3" />
-  <img src="1.5.png" class="frame3" />
-  <img src="1.6.png" class="frame3" />
-  <img src="1.7.png" class="frame3" />
-  <img src="1.8.png" class="frame3" />
-  <img src="1.9.png" class="frame3" />
-  <img src="1.10.png" class="frame3" />
+<!-- Animation 3 Images -->
+<img src="1.1.png" class="frame3" />
+<img src="1.2.png" class="frame3" />
+<img src="1.3.png" class="frame3" />
+<img src="1.4.png" class="frame3" />
+<img src="1.5.png" class="frame3" />
+<img src="1.6.png" class="frame3" />
+<img src="1.7.png" class="frame3" />
+<img src="1.8.png" class="frame3" />
+<img src="1.9.png" class="frame3" />
+<img src="1.10.png" class="frame3" />
 
-  <!-- Animation Script -->
+<!-- Animation Script -->
 <script>
-  /**
-   * Create an animation that loops through frames,
-   * with a constant frame speed and randomized pause duration.
-   * Random position each loop.
-   *
-   * @param {string} framesSelector - CSS selector for the frames
-   * @param {number} frameDuration - milliseconds per frame (constant)
-   * @param {object} pauseRange - { pauseMin, pauseMax } in ms (randomized)
-   * @param {object} bounds - { leftMin, leftMax, topMin, topMax } (percent values)
-   */
-  function createRandomPauseAnimation(framesSelector, frameDuration, pauseRange, bounds) {
-    const frames = document.querySelectorAll(framesSelector);
-    let currentFrame = 0;
+function createRandomPauseAnimation(framesSelector, frameDuration, pauseRange, bounds, soundFrameIndices) {
+  const frames = document.querySelectorAll(framesSelector);
+  const soundSrc = 'bang sound.m4a'; // path to your sound file
+  let currentFrame = 0;
 
-    function randomBetween(min, max) {
-      return Math.random() * (max - min) + min;
-    }
-
-    function setRandomPosition() {
-      const leftPercent = randomBetween(bounds.leftMin, bounds.leftMax);
-      const topPercent = randomBetween(bounds.topMin, bounds.topMax);
-      frames.forEach(frame => {
-        frame.style.position = 'fixed';
-        frame.style.left = leftPercent + '%';
-        frame.style.top = topPercent + '%';
-        frame.style.transform = 'translate(-50%, -50%)';
-      });
-    }
-
-    function runAnimation() {
-      if (currentFrame === 0) {
-        setRandomPosition();
-      }
-
-      frames.forEach((frame, index) => {
-        frame.style.display = index === currentFrame ? 'block' : 'none';
-      });
-
-      currentFrame++;
-
-      if (currentFrame < frames.length) {
-        setTimeout(runAnimation, frameDuration);
-      } else {
-        frames.forEach(frame => (frame.style.display = 'none'));
-        currentFrame = 0;
-        const nextPause = randomBetween(pauseRange.pauseMin, pauseRange.pauseMax);
-        setTimeout(runAnimation, nextPause);
-      }
-    }
-
-    runAnimation();
+  function randomBetween(min, max) {
+    return Math.random() * (max - min) + min;
   }
 
-  // 🎆 Launch Animations — Random Pause, Consistent Frame Speed
+  function setRandomPosition() {
+    const leftPercent = randomBetween(bounds.leftMin, bounds.leftMax);
+    const topPercent = randomBetween(bounds.topMin, bounds.topMax);
+    frames.forEach(frame => {
+      frame.style.position = 'fixed';
+      frame.style.left = leftPercent + '%';
+      frame.style.top = topPercent + '%';
+      frame.style.transform = 'translate(-50%, -50%)';
+    });
+  }
 
-  createRandomPauseAnimation(
-    '.frame',           // selector
-    125,                // frame speed (ms)
-    { pauseMin: 500, pauseMax: 1500 }, // random pause
-    { leftMin: 10, leftMax: 90, topMin: 25, topMax: 70 } // boundaries
-  );
+  function runAnimation() {
+    if (currentFrame === 0) {
+      setRandomPosition();
+    }
 
-  createRandomPauseAnimation(
-    '.frame2',
-    175,
-    { pauseMin: 600, pauseMax: 1600 },
-    { leftMin: 10, leftMax: 90, topMin: 25, topMax: 70 }
-  );
+    frames.forEach((frame, index) => {
+      frame.style.display = index === currentFrame ? 'block' : 'none';
+    });
 
-  createRandomPauseAnimation(
-    '.frame3',
-    150,
-    { pauseMin: 550, pauseMax: 1400 },
-    { leftMin: 10, leftMax: 90, topMin: 25, topMax: 70 }
-  );
+    if (soundFrameIndices.includes(currentFrame)) {
+      const sound = new Audio(soundSrc);
+      sound.play();
+    }
+
+    currentFrame++;
+
+    if (currentFrame < frames.length) {
+      setTimeout(runAnimation, frameDuration);
+    } else {
+      frames.forEach(frame => (frame.style.display = 'none'));
+      currentFrame = 0;
+      const nextPause = randomBetween(pauseRange.pauseMin, pauseRange.pauseMax);
+      setTimeout(runAnimation, nextPause);
+    }
+  }
+
+  runAnimation();
+}
+
+// Launch animations
+createRandomPauseAnimation(
+  '.frame',
+  125,
+  { pauseMin: 500, pauseMax: 1500 },
+  { leftMin: 10, leftMax: 90, topMin: 25, topMax: 70 },
+  [1] // play sound only on 3.2.png
+);
+
+createRandomPauseAnimation(
+  '.frame2',
+  175,
+  { pauseMin: 600, pauseMax: 1600 },
+  { leftMin: 10, leftMax: 90, topMin: 25, topMax: 70 },
+  [1] // play sound only on 2.2.png
+);
+
+createRandomPauseAnimation(
+  '.frame3',
+  150,
+  { pauseMin: 550, pauseMax: 1400 },
+  { leftMin: 10, leftMax: 90, topMin: 25, topMax: 70 },
+  [1] // play sound only on 1.2.png
+);
 </script>
+
 </body>
 </html>
